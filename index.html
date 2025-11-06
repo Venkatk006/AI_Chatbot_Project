@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agent Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Awesome Website</h1>
+    <nav id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#courses">Courses</a>
+      <a href="#careers">Careers</a>
+      <a href="#client-portal">Client Portal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- New Section You Added -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to our AI-powered website assistant demo.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are innovators in AI, automation, and intelligent web systems.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p>We offer AI chatbots, automation tools, and full-stack web development.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach us via email or chat to learn more about our solutions.</p>
+    </section>
+
+    <!-- Existing Main Sections -->
+    <section id="home-details">
+      <h2>Home Section</h2>
+      <p>Welcome to the homepage! We are a leading provider of innovative solutions in AI, automation, and web development.</p>
+      <ul>
+        <li>Cutting-edge AI-powered solutions</li>
+        <li>Expert training programs</li>
+        <li>Client-focused services</li>
+        <li>Career growth opportunities</li>
+      </ul>
+      <img src="home-banner.jpg" alt="AI solutions banner" style="width:100%; max-width:600px; margin-top:10px;">
+    </section>
+
+    <section id="courses">
+      <h2>Our Training Programs</h2>
+      <p>Our comprehensive training programs cover a wide range of topics to help you excel in your career.</p>
+      <div class="courses-list">
+        <article>
+          <h3>AI & Machine Learning</h3>
+          <p>Hands-on projects and real-world applications of AI and ML techniques.</p>
+        </article>
+        <article>
+          <h3>Web Development</h3>
+          <p>From HTML/CSS basics to advanced frameworks and responsive design.</p>
+        </article>
+        <article>
+          <h3>Data Analytics</h3>
+          <p>Learn how to analyze, visualize, and make sense of complex datasets.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="client-portal">
+      <h2>Client Portal</h2>
+      <p>Existing clients can log in to access their accounts, track project status, and download reports.</p>
+      <ul>
+        <li>Secure login with multi-factor authentication</li>
+        <li>Real-time project dashboards</li>
+        <li>Instant notifications and updates</li>
+      </ul>
+      <a href="/client-login" class="button">Login Here</a>
+    </section>
+
+    <section id="careers">
+      <h2>Careers</h2>
+      <p>Join our team! We are always looking for talented individuals to help shape the future of AI and technology.</p>
+      <ul>
+        <li>Software Engineers</li>
+        <li>AI/ML Specialists</li>
+        <li>Project Managers</li>
+        <li>UI/UX Designers</li>
+      </ul>
+      <a href="/careers" class="button">View Open Positions</a>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <blockquote>
+        "This company transformed our workflow using AI solutions. Highly recommend!" – Jane D., CEO
+      </blockquote>
+      <blockquote>
+        "Excellent training programs with practical hands-on experience." – John S., Developer
+      </blockquote>
+    </section>
+
+    <section id="contact-form-section">
+      <h2>Contact Us</h2>
+      <p>Reach out for partnerships, support, or general inquiries.</p>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- User Info Form Overlay -->
+  <div id="user-form-container" class="overlay">
+    <div class="form-box">
+      <h2>Welcome to AI Bot 🤖</h2>
+      <p>Please enter your details to continue</p>
+      <form id="user-form">
+        <input type="text" id="userName" placeholder="Enter your name" required />
+        <input type="email" id="userEmail" placeholder="Enter your email" required />
+        <input type="tel" id="userPhone" placeholder="Enter your phone number" required />
+        <button type="submit">Start Chat</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Chat Bubble -->
+  <div id="chat-bubble">
+    <img src="Avatar-Still.png" id="bot-avatar" alt="Bot Avatar">
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-window" class="hidden">
+    <div class="chat-header">
+      <h3>AI Sales Rep</h3>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="suggested-replies"></div>
+    <div class="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Ask me anything..." autocomplete="off">
+      <button id="mic-btn">🎤</button>
+    </div>
+  </div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
